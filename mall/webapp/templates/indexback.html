@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{#{% block nav %}#}
+{#<a class="nav-link" href="{% url "create" %}">Create!</a>#}
+{#<a class="nav-link" href="{% url "todo_update" todo.pk %}">Update!</a>#}
+{#<a class="nav-link" href="{% url "todo_delete" todo.pk %}">Delete!</a>#}
+{#{% endblock %}#}
+{% block content %}
+    <br/>
+    <h1>Cart!</h1>
+    <br/>
+    {% for s_c in bag %}
+        <p>Stuf: {{ s_c.stuf_key.stuf }}</p><a class="text-decoration-none" href="{% url 'deletestuf' s_c.pk %}" style="color:black">
+    <i class="bi bi-trash3"></i></a>
+        <p>Amount: {{ s_c.amount_stuf }}</p>
+        <p>Price: {{ s_c.stuf_key.price }}</p>
+        <p>Total: {{ s_c.total }}</p>
+        <hr>
+    {% endfor %}
+    <div>
+         <form>
+             {% for num in  %}
+         </form>
+    </div>
+{% endblock %}

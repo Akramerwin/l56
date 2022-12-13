@@ -1,0 +1,75 @@
+[
+{
+  "model": "webapp.stufs",
+  "pk": 1,
+  "fields": {
+    "stuf": "Capital",
+    "description": "Karl Markx Capital, Science fiction",
+    "categories": "other",
+    "remainder": 91,
+    "price": "8.00"
+  }
+},
+{
+  "model": "webapp.stufs",
+  "pk": 2,
+  "fields": {
+    "stuf": "Raspberry pi",
+    "description": "Raspberry pi, mini computer",
+    "categories": "electronics",
+    "remainder": 1000,
+    "price": "60.30"
+  }
+},
+{
+  "model": "webapp.stufs",
+  "pk": 3,
+  "fields": {
+    "stuf": "Stone Island cardigan knit",
+    "description": "Made from iron",
+    "categories": "clothes",
+    "remainder": 500,
+    "price": "4999.99"
+  }
+},
+{
+  "model": "webapp.stufs",
+  "pk": 4,
+  "fields": {
+    "stuf": "brush",
+    "description": "Poor brush",
+    "categories": "for_home",
+    "remainder": 1,
+    "price": "99999.99"
+  }
+},
+{
+  "model": "webapp.stufs",
+  "pk": 5,
+  "fields": {
+    "stuf": "500kg dumbbell",
+    "description": "500kg = 1102,31lbs\r\n( No delivery, pickup :) )\r\n( Someone buy this dumbbell please, it gets in the way in the office :((( )",
+    "categories": "sports",
+    "remainder": 1,
+    "price": "1.00"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$33qbWw3rY8fCU5Ib5p7Rmx$dFQN+lEwmukW2ypAuFgONye0rxa+3nU6XbLoOB0bF1k=",
+    "last_login": "2022-11-13T21:01:08.703Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-11-13T20:59:52.075Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

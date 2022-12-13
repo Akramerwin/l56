@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{#{% block nav %}#}
+{#<a class="nav-link" href="{% url "create" %}">Create!</a>#}
+{#<a class="nav-link" href="{% url "todo_update" todo.pk %}">Update!</a>#}
+{#<a class="nav-link" href="{% url "todo_delete" todo.pk %}">Delete!</a>#}
+{#{% endblock %}#}
+{% block content %}
+
+<body>
+    <h2>Stuf: {{ stufs.stuf }}</h2>
+    <p>Description: {{ stufs.description }}</p>
+    <p>Categories: {{ stufs.categories }}</p>
+    <p>Remainder: {{ stufs.remainder }}</p>
+    <p>Price: {{ stufs.price }}</p></body>
+{% endblock %}

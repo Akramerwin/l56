@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    <div>
+    <h1>Online Shop <i class="bi bi-shop-window"></i></h1>
+    </div>
+<br/>
+                    {% include 'partial/simple_search.html' %}
+    <br/>
+      {% for stuf in stufs %}
+            <div class="card w-50">
+            <div class="card-body">
+            <div class="d-flex">
+            <a class="text-decoration-none" style="color:black" href="{% url 'view' stuf.pk %}"}><h5 class="card-title">{{ stuf.stuf }}&nbsp                <a class="text-decoration-none" style="color:black" href="{% url 'update' stuf.pk %}"}><i class="bi bi-pencil-square">&nbsp</i></a>
+                <a class="text-decoration-none" href="{% url 'delete' stuf.pk %}" style="color:black"><i class="bi bi-file-earmark-minus"></i></a></h5></a>
+                <form action="" method="post">
+                &nbsp&nbsp<a class="text-decoration-none" style="color: black" href="{% url 'stufbag' stuf.pk %}"><i class="bi bi-basket"></i></a>
+                    </form>
+            </div>
+                <p>$ {{ stuf.price }}&nbsp</p>
+            <p class="card-text">Categories: {{ stuf.categories }}</p>
+            </div>
+            </div>
+            <br/>
+      {% endfor %}
+    {% if is_paginated %}
+        {% include "partial/pagination.html" %}
+    {% endif %}
+</body>
+{% endblock %}
+{#&nbsp пробел html#}
